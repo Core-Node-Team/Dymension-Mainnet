@@ -86,6 +86,9 @@ mv build/dymd $HOME/.dymension/cosmovisor/upgrades/v4/bin/
 ln -s $HOME/.dymension/cosmovisor/genesis $HOME/.dymension/cosmovisor/current -f
 sudo ln -s $HOME/.dymension/cosmovisor/current/bin/dymd /usr/local/bin/dymd -f
 ```
+```
+go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.5.0
+```
 ### Servis
 ```
 sudo tee /etc/systemd/system/dymd.service > /dev/null << EOF
